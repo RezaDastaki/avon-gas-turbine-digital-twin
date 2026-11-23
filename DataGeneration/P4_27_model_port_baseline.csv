@@ -1,0 +1,16 @@
+# P4_27_model_port_baseline.csv structural-scan baseline.
+# Written on the FIRST run of CheckModelStructuralIntegrity.m, after repair.
+# Why the baseline is 5 rows and not 0: these are pre-existing scope/plot wiring,
+# found in BOTH the production model and the untouched 2026-10-08 reference
+# -- a Sum in system_4400, three Mux ports in
+# system_4654, a Sum in system_4909. Repairing them is out of scope for this project;
+# testing for SET EQUALITY against this recorded baseline is strictly stronger than a
+# threshold of "at most 6" would be, because it also catches a port going from
+# connected to dangling (or vice versa) even when the COUNT happens to stay the same.
+
+BlockPath,SID,PortNumber,BlockType
+AvonGasTurbineDgTwin_fixed/Subsystem/GasGenerator/cooling 2/Sum7,4939,2,Sum
+AvonGasTurbineDgTwin_fixed/Subsystem/PowerTurbine/Mux1,4678,2,Mux
+AvonGasTurbineDgTwin_fixed/Subsystem/PowerTurbine/Mux2,4679,2,Mux
+AvonGasTurbineDgTwin_fixed/Subsystem/PowerTurbine/Mux2,4679,3,Mux
+AvonGasTurbineDgTwin_fixed/Subsystem/Sum1,3298,1,Sum

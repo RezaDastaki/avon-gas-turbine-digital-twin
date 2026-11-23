@@ -1,0 +1,15 @@
+# Avon dataset pipeline - machine settings
+# Resolution order for every key: environment variable wins, then this file, then a default.
+
+# Parallel workers. The laptop is 10 physical cores / 16 threads; 8 leaves two
+# cores for the OS and the per-record HDF5 writes, and runs measurably cooler
+# than 10 for very little throughput. Measured RAM = 0.87 + 3.22 x workers GB,
+# so 8 workers ~= 26.6 GB of the 63.6 GB installed.
+AVON_WORKERS=8
+
+# Dataset root. Left unset, it resolves to the Data folder inside the folder containing this file. The data root IS the release tree (DIAG_*, RTF_*, DiagnosisTurndown directly inside it); logs and locks go to Logs.
+#AVON_DATA_ROOT=
+
+# Multi-machine sharding (built, unused). 1 of 1 == no sharding.
+#AVON_SHARD=1
+#AVON_SHARDS=1

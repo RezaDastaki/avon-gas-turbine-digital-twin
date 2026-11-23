@@ -1,0 +1,43 @@
+fault_id,fault_num,code,name,group,plant_coupling,profile_type,osc_frequency_hz,sev1_deviation,sev5_deviation,rtf_member,name_before_2026_11_21
+F01,1,AirIntakeFilterFouling,Air intake filter fouling (intake pressure-loss increase),Air Intake,plant,linear_ramp,0.0,0.000761,0.25,no,Air intake filter fouling
+F02,2,CompressorFouling,Compressor fouling (isentropic-efficiency loss),Compressor,plant,linear_ramp,0.0,0.000637,0.1,yes,Compressor blade fouling
+F03,3,CompressorBladeDamage,Compressor blade damage (isentropic-efficiency loss),Compressor,plant,step,0.0,0.000637,0.1,yes,Compressor blade damage
+F04,4,CompressorFlowLoss,Compressor air-flow step loss (stall surrogate),Compressor,plant,step,0.0,0.001024,0.07,no,Compressor flow step loss (stall surrogate)
+F05,5,DiffuserDamage,Diffuser damage (pressure-ratio loss),Compressor,plant,step,0.0,0.002272,0.13,yes,Diffuser damage
+F06,6,IGVStuck,Inlet guide vane stuck (IGV opening offset from demand),Compressor,plant,step,0.0,0.002135,0.2,no,IGV stuck
+F07,7,FuelRegulatorStuck,Fuel gas pressure regulator stuck (line-pressure error),Fuel System,plant,step,0.0,8.8e-05,0.1,no,Fuel pressure regulator stuck
+F08,8,FuelValveLeakage,Fuel valve leakage (fuel-flow loss),Fuel System,plant,linear_ramp,0.0,0.007391,0.1,no,Fuel valve leakage
+F09,9,FuelContamination,Fuel contamination (fuel-flow error),Fuel System,plant,step,0.0,0.007383,0.2,no,Fuel contamination
+F10,10,FuelLineBlockage,Fuel line blockage (fuel-flow restriction),Fuel System,plant,linear_ramp,0.0,0.007387,0.3,no,Fuel line blockage
+F11,11,FuelPumpDegradation,Fuel pump degradation (fuel line-pressure loss),Fuel System,plant,linear_ramp,0.0,9e-05,0.2,yes,Fuel pump degradation
+F12,12,FGRegulatedPressureLoss,Fuel gas regulated-pressure loss,Fuel System,plant,step,0.0,9e-05,0.1,no,FG regulated pressure loss
+F13,13,FGPressureOscillation,Fuel gas regulated-pressure oscillation (0.05 Hz),Fuel System,plant,oscillate,0.05,9.2e-05,0.1,no,FG supply pressure oscillation
+F14,14,FGValvePartialOpening,Fuel gas valve partial opening (valve-position loss),Fuel System,plant,step,0.0,0.002962,0.1,no,FG valve partial opening
+F15,15,FGValveActuatorGainLoss,Fuel gas valve actuator gain loss,Fuel System,plant,step,0.0,0.002974,0.07,no,FG valve actuator gain loss
+F16,16,LinerDistress,Combustor liner distress (combustor air-flow loss surrogate),Combustor,plant,step,0.0,0.001033,0.08,yes,Combustor air flow loss (liner distress surrogate)
+F17,17,NozzleClogging,Fuel nozzle clogging (combustor fuel-flow restriction),Combustor,plant,linear_ramp,0.0,0.00256,0.15,yes,Fuel nozzle clogging
+F18,18,HeatReleaseOscillation,"Low-frequency heat-release oscillation, 0.30 Hz (combustor exit-temperature surrogate)",Combustor,plant,oscillate,0.30,0.002,0.2,no,Low-frequency heat-release oscillation (0.30 Hz)
+F19,19,CombustionOscillation,"Low-frequency combustion oscillation, 0.10 Hz (combustor exit-temperature surrogate)",Combustor,plant,oscillate,0.10,0.008542,0.2,no,Low-frequency fuel-air ratio oscillation (0.10 Hz)
+F20,20,HotGasPathOvertemperature,Hot gas path temperature increase,Combustor,plant,linear_ramp,0.0,0.001732,0.1,no,Hot gas path temperature increase
+F21,21,GGTurbineFouling,GG turbine fouling (efficiency loss),GG Turbine,plant,linear_ramp,0.0,0.000234,0.08,yes,GG turbine fouling
+F22,22,GGBladeDamage,GG turbine blade damage (efficiency loss),GG Turbine,plant,linear_ramp,0.0,0.000237,0.07,yes,GG turbine blade damage
+F23,23,GGNozzleBlockage,GG nozzle blockage (hot-gas flow restriction),GG Turbine,plant,linear_ramp,0.0,0.001013,0.1,yes,GG nozzle blockage
+F24,24,GGSealDegradation,GG seal degradation (cooling-air leakage increase),GG Turbine,plant,linear_ramp,0.0,0.000737,0.1,yes,GG seal degradation
+F25,25,GGInletPressureLoss,GG turbine inlet pressure loss,GG Turbine,plant,linear_ramp,0.0,0.000197,0.1,no,GG turbine inlet pressure loss
+F26,26,PTFouling,PT fouling (efficiency loss),PT Turbine,plant,linear_ramp,0.0,0.00031,0.15,yes,PT fouling
+F27,27,PTBladeDamage,PT blade damage (efficiency loss),PT Turbine,plant,step,0.0,0.000316,0.129487,yes,PT blade damage
+F28,28,PTNozzleDamage,PT nozzle damage (hot-gas flow change),PT Turbine,plant,step,0.0,0.000401,0.2,yes,PT nozzle damage
+F29,29,PTInletTempPerturbation,PT inlet temperature perturbation,PT Turbine,plant,linear_ramp,0.0,0.00064,0.1,no,PT inlet temperature perturbation
+F30,30,PTMechanicalLoss,PT mechanical-loss increase (bearing-wear surrogate),PT Turbine,plant,linear_ramp,0.0,0.15,0.225,no,PT net shaft power loss
+F31,31,PTPowerLoss,PT delivered power loss,PT Turbine,plant,step,0.0,0.000353,0.25,no,PT delivered power loss
+F32,32,StackBlockage,Exhaust stack blockage (back-pressure increase),Exhaust,plant,linear_ramp,0.0,0.005247,0.2,no,Stack blockage
+F33,33,GGTempSensorDriftPos,GG temperature sensor drift (+),Sensor,logger_only,linear_ramp,0.0,0.001102,0.05,no,GG temp sensor drift (+)
+F34,34,GGTempSensorDriftNeg,GG temperature sensor drift (-),Sensor,logger_only,linear_ramp,0.0,0.001102,0.05,no,GG temp sensor drift (-)
+F35,35,GGTempSensorBiasPos,GG temperature sensor bias (+),Sensor,logger_only,step,0.0,0.001102,0.05,no,GG temp sensor bias (+)
+F36,36,GGTempSensorBiasNeg,GG temperature sensor bias (-),Sensor,logger_only,step,0.0,0.001102,0.05,no,GG temp sensor bias (-)
+F37,37,GGTempSensorFreeze,GG temperature sensor freezing,Sensor,logger_only,freeze,0.0,,,no,GG temp sensor freezing
+F38,38,GGSpeedSensorGainError,GG speed sensor gain error,Sensor,logger_only,step,0.0,0.001097,0.05,no,GG speed sensor fault
+F39,39,PTSpeedSensorGainError,PT speed sensor gain error,Sensor,logger_only,step,0.0,0.001097,0.05,no,PT speed sensor fault
+F40,40,FuelFlowmeterOffset,Fuel gas flowmeter offset,Sensor,logger_only,step,0.0,0.001917,0.01,no,FG flowmeter offset/failure
+F41,41,FuelFlowmeterDrift,Fuel gas flowmeter drift,Sensor,logger_only,linear_ramp,0.0,0.001917,0.01,no,FG flowmeter drift
+F42,42,ControlLoopOscillation,Power-control loop oscillation (0.2 Hz on PID4 output),Controller,plant,oscillate,0.2,0.02804,0.15,no,Control loop instability

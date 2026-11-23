@@ -1,0 +1,25 @@
+# TODO (author): fill in the author list (pending co-author sign-off), ORCIDs, the repository URL and the DOIs before publishing.
+cff-version: 1.2.0
+message: "If you use this software, please cite it and the associated dataset."
+title: "Avon Gas Turbine Digital Twin: a fault-diagnosis and prognostics data generator"
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+repository-code: "TODO: GitHub URL"
+license: "TODO"
+keywords:
+  - gas turbine
+  - digital twin
+  - fault diagnosis
+  - prognostics
+  - remaining useful life
+  - Simulink
+  - benchmark dataset
+references:
+  - type: dataset
+    title: "Rolls-Royce Avon Mk1535 Gas Turbine Digital-Twin Dataset for Fault Diagnosis and Prognostics"
+    authors:
+      - family-names: "TODO"
+        given-names: "TODO"
+    doi: "TODO"
