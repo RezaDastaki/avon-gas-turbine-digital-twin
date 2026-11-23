@@ -1,5 +1,9 @@
 # Avon Gas Turbine Digital Twin: a fault-diagnosis and prognostics data generator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![MATLAB R2024b](https://img.shields.io/badge/MATLAB-R2024b-blue.svg)
+![Simulink](https://img.shields.io/badge/Simulink-model-orange.svg)
+
 A physics-based Simulink digital twin of a **Rolls-Royce Avon Mk1535 two-shaft industrial gas
 turbine**, together with the complete, resumable pipeline that turns it into labelled
 benchmark data for **fault diagnosis** and **remaining-useful-life (RUL) prognostics**.
@@ -192,7 +196,8 @@ See `CONTRIBUTING.md`.
 
 ## Licence
 
-`[Licence to be chosen by the author]`
+Released under the [MIT License](LICENSE). The licence covers the code and models in this
+repository. The dataset on Zenodo has its own licence.
 
 ## Trademark note
 
@@ -202,6 +207,5 @@ sponsored by Rolls-Royce plc or Siemens Energy, and the model is not manufacture
 
 ## Acknowledgements
 
-<!-- TODO (author): confirm this wording before publishing. -->
 We thank Fajr Jam Gas Refining Company, Iran, the operator of the engine on which the original
 digital twin is based.
